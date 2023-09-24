@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #bfbfbf
   }
   
   li {
@@ -32,5 +32,5 @@ ul {
   }
 
   body {
-    background-color: lightsteelblue
+    background-color: #e6e6e6
   }
