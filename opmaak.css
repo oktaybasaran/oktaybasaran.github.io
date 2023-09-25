@@ -79,7 +79,7 @@ ul {
     text-decoration: underline;
   }
 
-  .grote-tekst {
-    font-size: 18px; /* Pas de gewenste grootte aan */
+  a {
+    font-size: 50px
   }
   
