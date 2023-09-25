@@ -52,10 +52,13 @@ ul {
   }
 
   p {
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
   }
   
   img {
-    margin-top: 20px;
+    margin-top: 25px;
   }
   
+  ul {
+      margin-bottom: 30px; 
+  }
