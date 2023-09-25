@@ -48,17 +48,21 @@ ul {
   }
 
   footer {
-    padding-top: 25px;
+    padding-top: 25px
   }
 
   p {
-    margin-bottom: 22px; 
+    margin-bottom: 22px
   }
   
   img {
-    margin-top: 22px;
+    margin-top: 22px
   }
 
   h1 {
-    margin-top: 50px; 
+    margin-top: 50px
+  }
+
+  h1 {
+    margin-bottom: 20px
   }
