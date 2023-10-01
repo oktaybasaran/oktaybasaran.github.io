@@ -1,4 +1,4 @@
-/* Dit is een stijlregel voor een ongeordende lijst. */
+/* Dit is een stijlregel voor het menu. */
 ul {
   /* Hier verwijderen we de standaard lijststijl. */
   list-style-type: none;
@@ -16,7 +16,7 @@ ul {
   background-color: #609f9f;
 }
 
-/* Dit is een stijlregel voor de lijstitems (li-elementen) binnen een ongeordende lijst (ul-element). */
+/* Dit is een stijlregel voor de lijstitems (li-elementen) binnen het menu (ul-element). */
 li {
   /* Hier floaten we de lijstitems naar links, zodat ze naast elkaar worden weergegeven. */
   float: left;
