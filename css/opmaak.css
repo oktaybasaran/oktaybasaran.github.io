@@ -83,22 +83,22 @@ footer {
   padding-top: 25px;
 }
 
-/* Dit is een stijlregel voor de ondermarge van paragrafen. */
+/* Dit is een stijlregel voor meer ruimte onder alle paragrafen. */
 p {
   margin-bottom: 20px;
 }
 
-/* Dit is een stijlregel voor het bovenmarge van afbeeldingen. */
+/* Dit is een stijlregel voor meer ruimte boven alle afbeeldingen. */
 img {
   margin-top: 20px;
 }
 
-/* Dit is een stijlregel voor het bovenmarge van kopteksten. */
+/* Dit is een stijlregel voor meer ruimte boven alle kopteksten. */
 h1 {
   margin-top: 38px;
 }
 
-/* Dit is een stijlregel voor de ondermarge van kopteksten. */
+/* Dit is een stijlregel voor meer ruimte onder alle kopteksten. */
 h1 {
   margin-bottom: 25px;
 }
