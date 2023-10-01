@@ -58,6 +58,11 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
+/* Dit is een stijlregel voor de achtergrondkleur van de hele webpagina (body-element). */
+body {
+  background-color: #e0ebeb;
+}
+
 /* Dit is een stijlregel voor de kleur van kopteksten (h1-elementen). */
 h1 {
   color: #568f8f;
