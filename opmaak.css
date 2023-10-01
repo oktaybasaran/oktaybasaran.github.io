@@ -1,88 +1,121 @@
+/* Dit is een stijlregel voor een ongeordende lijst. */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #609f9f;
-  }
+  /* Hier verwijderen we de standaard lijststijl. */
+  list-style-type: none;
   
+  /* We stellen de marges van de lijst in op 0 om eventuele ruimte te verwijderen. */
+  margin: 0;
+  
+  /* We stellen het opvullen (padding) van de lijst in op 0 om eventuele ruimte te verwijderen. */
+  padding: 0;
+  
+  /* We zorgen ervoor dat de lijst geen inhoud buiten zijn kader weergeeft. */
+  overflow: hidden;
+  
+  /* We stellen de achtergrondkleur van de lijst in op #609f9f. */
+  background-color: #609f9f;
+}
+
+/* Dit is een stijlregel voor de lijstitems (li-elementen) binnen een ongeordende lijst (ul-element). */
+li {
+  /* Hier floaten we de lijstitems naar links, zodat ze naast elkaar worden weergegeven. */
+  float: left;
+  
+  /* We voegen een rechterrand toe aan elk lijstitem, gescheiden door een 1px brede, grijze lijn. */
+  border-right: 1px solid #bbb;
+  
+  /* Dit is een geneste stijlregel voor lijstitems binnen lijstitems. */
   li {
-    float: left;
-    border-right:1px solid #bbb;
+      /* Dezelfde stijl als hierboven toegepast op geneste lijstitems. */
+      float: left;
+      border-right: 1px solid #bbb;
   }
-  
-  li:last-child {
-    border-right: none;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
+}
 
-  body {
-    background-color: #e0ebeb
-  }
+/* Dit is een stijlregel voor het laatste lijstitem binnen de lijst. */
+li:last-child {
+  /* We verwijderen de rechterrand van het laatste lijstitem om een naadloze weergave te garanderen. */
+  border-right: none;
+}
 
-  h1 {
-    color: #568f8f;
-  }
+/* Dit is een stijlregel voor links (a-elementen) binnen lijstitems. */
+li a {
+  /* Hier stellen we in dat links als blokken worden weergegeven, zodat ze het hele lijstitem in beslag nemen. */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  p {
-    color: #568f8f;
-  }
+/* Dit is een stijlregel voor links binnen lijstitems wanneer de muis erover zweeft (hover). */
+li a:hover:not(.active) {
+  background-color: #111;
+}
 
-  p {
-    font-size: 20px;
-  }
+/* Dit is een stijlregel voor de achtergrondkleur van het actieve (geselecteerde) lijstitem. */
+.active {
+  background-color: #04AA6D;
+}
 
-  footer {
-    padding-top: 25px;
-  }
+/* Dit is een stijlregel voor de kleur van kopteksten (h1-elementen). */
+h1 {
+  color: #568f8f;
+}
 
-  p {
-    margin-bottom:20px;
-  }
-  
-  img {
-    margin-top: 20px;
-  }
+/* Dit is een stijlregel voor paragrafen (p-elementen) met tekstkleur. */
+p {
+  color: #568f8f;
+}
 
-  h1 {
-    margin-top: 38px;
-  }
+/* Dit is een stijlregel voor paragrafen met een specifieke lettergrootte. */
+p {
+  font-size: 20px;
+}
 
-  h1 {
-    margin-bottom: 25px;
-  }
- 
-  a:link {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  a:active {
-    text-decoration: underline;
-  }
+/* Dit is een stijlregel voor de bovenvulling (padding) van het footer-element. */
+footer {
+  padding-top: 25px;
+}
 
-  .linkjes {
-   font-size: 20px;
-  }
+/* Dit is een stijlregel voor de ondermarge van paragrafen. */
+p {
+  margin-bottom: 20px;
+}
+
+/* Dit is een stijlregel voor het bovenmarge van afbeeldingen. */
+img {
+  margin-top: 20px;
+}
+
+/* Dit is een stijlregel voor het bovenmarge van kopteksten. */
+h1 {
+  margin-top: 38px;
+}
+
+/* Dit is een stijlregel voor de ondermarge van kopteksten. */
+h1 {
+  margin-bottom: 25px;
+}
+
+/* Dit zijn stijlregels voor verschillende linkstatussen (link, bezocht, hover, actief). */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* Dit is een stijlregel om de linkjes groter te maken. */
+.linkjes {
+  font-size: 20px;
+}
