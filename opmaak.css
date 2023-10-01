@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:   #609f9f
+    background-color: #609f9f;
   }
   
   li {
@@ -36,31 +36,31 @@ ul {
   }
 
   h1 {
-    color: #568f8f
+    color: #568f8f;
   }
 
   p {
-    color: #568f8f
+    color: #568f8f;
   }
 
   p {
-    font-size: 20px
+    font-size: 20px;
   }
 
   footer {
-    padding-top: 25px
+    padding-top: 25px;
   }
 
   p {
-    margin-bottom:20px
+    margin-bottom:20px;
   }
   
   img {
-    margin-top: 20px
+    margin-top: 20px;
   }
 
   h1 {
-    margin-top: 38px
+    margin-top: 38px;
   }
 
   h1 {
