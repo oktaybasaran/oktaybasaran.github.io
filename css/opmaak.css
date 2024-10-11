@@ -149,3 +149,12 @@ a:active {
 .top-level-menu a:hover {
   color: #000000;
 }
+
+/* Opmaak voor de footer */
+.footer {
+  margin-top: 40px; /* Verhoog deze waarde voor meer ruimte tussen de footer en de inhoud erboven */
+  padding: 20px; /* Voeg padding toe voor extra ruimte binnen de footer zelf */
+  background-color: #609f9f; /* Achtergrondkleur voor de footer */
+  color: white; /* Tekstkleur voor de footer */
+  text-align: center; /* Centreer de tekst in de footer */
+}
