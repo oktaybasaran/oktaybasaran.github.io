@@ -9,25 +9,21 @@
 
         <br> <!--Voegt een enkele regelafstand in-->
         <ul> <!--Menu-->
-            <li><a href="index.html">Homepage <img src="afbeeldingen/homepagemenu.jpg" width="50" height="50"></a></li> <!--Eerste lijstitem met link naar homepage en een afbeelding-->
-            <li><a href="binairstelsel.html">Binaire stelsel <img src="afbeeldingen/binairstelselmenu.jpg" width="50" height="50"></a></li> <!--Tweede lijstitem met link naar pagina het binaire stelsel en een afbeelding-->
-            <li><a href="kleurmodellen.html">kleurmodellen <img src="afbeeldingen/kleurmodellenmenu.png" width="50" height="50"></a></li> <!--Derde lijstitem met link naar pagina kleurmodellen en een afbeelding-->
-            <li><a href="algemeneinformatie.html">Algemene info <img src="afbeeldingen/algemeneinformatiemenu.png" width="50" height="50"></a></li> <!--Vierde lijstitem met link naar pagina algemeneinformatie en een afbeelding-->
-            <li><a href="bestandformaten.html">Bestandformaten <img src="afbeeldingen/bestandformatenmenu.png" width="50" height="50"></a></li> <!--Vijfde lijstitem met link naar pagina bestandformaten en een afbeelding-->
-            <li><a href="compressie.html">Compressie <img src="afbeeldingen/compressiemenu.png" width="50" height="50"></a></li> <!--Zesde lijstitem met een link naar pagina compressie en een afbeelding-->
-            <li>
-                <a href="#">Drielagenmodel <img src="afbeeldingen/computerarchitectuur.jpg" width="50" height="50"></a>
-                <ul class="second-level-menu">
-                    <li><a href="fysiekelaag.html">Fysiekelaag</a>
-                        <ul class="third-level-menu">
-                            <li><a href="fysiekelaag-a.html">A</a></li>
-                            <li><a href="fysiekelaag-b.html">B</a></li>
-                            <li><a href="fysiekelaag-c.html">C</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="toepassingslaag.html">Toepassingslaag</a></li>
-                    <li><a href="logischelaag.html">Logischelaag</a></li>
-                </ul>
+            <li><a href="index.html">Homepage <img src="afbeeldingen/homepagemenu.jpg" width="50" height="50"></a></li> 
+            <li><a href="binairstelsel.html">Binaire stelsel <img src="afbeeldingen/binairstelselmenu.jpg" width="50" height="50"></a></li> 
+            <li><a href="kleurmodellen.html">Kleurmodellen <img src="afbeeldingen/kleurmodellenmenu.png" width="50" height="50"></a></li> 
+            <li><a href="algemeneinformatie.html">Algemene info <img src="afbeeldingen/algemeneinformatiemenu.png" width="50" height="50"></a></li> 
+            <li><a href="bestandformaten.html">Bestandformaten <img src="afbeeldingen/bestandformatenmenu.png" width="50" height="50"></a></li> 
+            <li><a href="compressie.html">Compressie <img src="afbeeldingen/compressiemenu.png" width="50" height="50"></a></li>  
+              
+            <!-- Drielagenmodel met dropdownmenu -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Drielagenmodel <img src="afbeeldingen/drielagenmodelmenu.png" width="50" height="50"></a>
+                <div class="dropdown-content">
+                    <a href="fysiekelaag.html">Fysieke laag</a>
+                    <a href="logischelaag.html">Logische laag</a>
+                    <a href="toepassingslaag.html">Toepassingslaag</a>
+                </div>
             </li>
         </ul>
 
