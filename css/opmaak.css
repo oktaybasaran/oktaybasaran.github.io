@@ -90,7 +90,7 @@ a:active {
   position: absolute;
   left: 0; /* Zorg ervoor dat het dropdown-menu links uitlijnt */
   top: 30px; /* Zorg ervoor dat het dropdown-menu onder de knop komt */
-  width: 800px;
+  width: 150px;
   background-color: #999999;
   list-style: none;
   padding: 0;
@@ -128,7 +128,7 @@ a:active {
   position: relative;
   float: left;
   height: 30px;
-  width: 200px;
+  width: 150px;
   background: #999999;
 }
 
