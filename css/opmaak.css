@@ -1,46 +1,25 @@
-/* Dit is een stijlregel voor het menu. */
+/* Algemene menu-opmaak */
 ul {
-  /* Hier verwijderen we de standaard lijststijl. */
   list-style-type: none;
-  
-  /* We stellen de marges van de lijst in op 0 om eventuele ruimte te verwijderen. */
   margin: 0;
-  
-  /* We stellen het opvullen (padding) van de lijst in op 0 om eventuele ruimte te verwijderen. */
   padding: 0;
-  
-  /* We zorgen ervoor dat de lijst geen inhoud buiten zijn kader weergeeft. */
   overflow: hidden;
-  
-  /* We stellen de achtergrondkleur van de lijst in op #609f9f. */
   background-color: #609f9f;
 }
 
-/* Dit is een stijlregel voor de lijstitems (li-elementen) binnen het menu (ul-element). */
+/* Standaard opmaak voor lijstitems in het menu */
 li {
-  /* Hier floaten we de lijstitems naar links, zodat ze naast elkaar worden weergegeven. */
   float: left;
-  
-  /* We voegen een rechterrand toe aan elk lijstitem, gescheiden door een 1px brede, grijze lijn. */
   border-right: 1px solid #bbb;
-  
-  /* Dit is een geneste stijlregel voor lijstitems binnen lijstitems. */
-  li {
-      /* Dezelfde stijl als hierboven toegepast op geneste lijstitems. */
-      float: left;
-      border-right: 1px solid #bbb;
-  }
 }
 
-/* Dit is een stijlregel voor het laatste lijstitem binnen de lijst. */
+/* Geen border voor het laatste lijstitem */
 li:last-child {
-  /* We verwijderen de rechterrand van het laatste lijstitem om een naadloze weergave te garanderen. */
   border-right: none;
 }
 
-/* Dit is een stijlregel voor links (a-elementen) binnen lijstitems. */
+/* Link opmaak binnen het menu */
 li a {
-  /* Hier stellen we in dat links als blokken worden weergegeven, zodat ze het hele lijstitem in beslag nemen. */
   display: block;
   color: white;
   text-align: center;
@@ -48,156 +27,165 @@ li a {
   text-decoration: none;
 }
 
-/* Dit is een stijlregel voor links binnen lijstitems wanneer de muis erover zweeft (hover). */
+/* Hover-effect voor links, behalve het actieve item */
 li a:hover:not(.active) {
   background-color: #111;
 }
 
-/* Dit is een stijlregel voor de achtergrondkleur van het actieve (geselecteerde) lijstitem. */
+/* Opmaak voor het actieve (geselecteerde) item */
 .active {
   background-color: #04AA6D;
 }
 
-/* Dit is een stijlregel voor de achtergrondkleur van de hele webpagina (body-element). */
+/* Opmaak voor het hele document */
 body {
   background-color: #e0ebeb;
 }
 
-/* Dit is een stijlregel voor de kleur van kopteksten (h1-elementen). */
+/* Kleuren voor kopteksten */
 h1 {
   color: #568f8f;
 }
 
-/* Dit is een stijlregel voor paragrafen (p-elementen) met tekstkleur. */
+/* Opmaak voor paragrafen */
 p {
   color: #568f8f;
-}
-
-/* Dit is een stijlregel voor paragrafen met een specifieke lettergrootte. */
-p {
   font-size: 20px;
-}
-
-/* Dit is een stijlregel voor de bovenvulling (padding) van het footer-element. */
-footer {
-  padding-top: 25px;
-}
-
-/* Dit is een stijlregel voor meer ruimte onder alle paragrafen. */
-p {
   margin-bottom: 20px;
 }
 
-/* Dit is een stijlregel voor meer ruimte boven alle afbeeldingen. */
+/* Standaard opmaak voor afbeeldingen en kopteksten */
 img {
   margin-top: 25px;
 }
 
-/* Dit is een stijlregel voor meer ruimte boven alle kopteksten. */
 h1 {
   margin-top: 38px;
-}
-
-/* Dit is een stijlregel voor meer ruimte onder alle kopteksten. */
-h1 {
   margin-bottom: 25px;
 }
 
-/* Dit zijn stijlregels voor verschillende linkstatussen (link, bezocht, hover, actief). */
-a:link {
+/* Linkstijl voor verschillende statussen */
+a:link, a:visited {
   text-decoration: none;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
+a:hover, a:active {
   text-decoration: underline;
 }
 
-a:active {
-  text-decoration: underline;
-}
-
-/* Dit is een stijlregel om de linkjes groter te maken. */
+/* Vergrootte opmaak voor specifieke linkjes */
 .linkjes {
   font-size: 20px;
 }
 
-.third-level-menu
-{
-    position: absolute;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+/* Verbeterde dropdownmenu voor Drielagenmodel */
+.third-level-menu {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
 
-.third-level-menu > li
-{
-    height: 30px;
-    background: #999999;
-}
-.third-level-menu > li:hover { background: #CCCCCC; }
-
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+.third-level-menu > li {
+  height: 30px;
+  background: #999999;
 }
 
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: #999999;
-}
-.second-level-menu > li:hover { background: #CCCCCC; }
-
-.top-level-menu
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.third-level-menu > li:hover {
+  background: #CCCCCC;
 }
 
-.top-level-menu > li
-{
-    position: relative;
-    float: left;
-    height: 30px;
-    width: 150px;
-    background: #999999;
-}
-.top-level-menu > li:hover { background: #CCCCCC; }
-
-.top-level-menu li:hover > ul
-{
-    /* On hover, display the next level's menu */
-    display: inline;
+.second-level-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
 
-/* Menu Link Styles */
-
-.top-level-menu a /* Apply to all links inside the multi-level menu */
-{
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 0 0 0 10px;
-
-    /* Make the link cover the entire list item-container */
-    display: block;
-    line-height: 30px;
+.second-level-menu > li {
+  position: relative;
+  height: 30px;
+  background: #999999;
 }
-.top-level-menu a:hover { color: #000000; }
+
+.second-level-menu > li:hover {
+  background: #CCCCCC;
+}
+
+/* Top-level menu structuur */
+.top-level-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu-item opmaak voor het bovenste niveau */
+.top-level-menu > li {
+  position: relative;
+  float: left;
+  height: 30px;
+  width: 150px;
+  background: #999999;
+}
+
+.top-level-menu > li:hover {
+  background: #CCCCCC;
+}
+
+/* Zorg ervoor dat de tweede en derde niveau menu's verschijnen bij hover */
+.top-level-menu li:hover > ul {
+  display: inline;
+}
+
+/* Menu link stijlen */
+.top-level-menu a {
+  font: bold 14px Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 10px;
+  display: block;
+  line-height: 30px;
+}
+
+.top-level-menu a:hover {
+  color: #000000;
+}
+
+/* Specifieke stijl voor de dropdown van Drielagenmodel */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  background-color: #999999;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #999999;
+}
+
+.dropdown-content a:hover {
+  background-color: #CCCCCC;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

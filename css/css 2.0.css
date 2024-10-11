@@ -1,76 +1,70 @@
-.third-level-menu
-{
-    position: absolute;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.third-level-menu > li
-{
-    height: 30px;
-    background: #999999;
-}
-.third-level-menu > li:hover { background: #CCCCCC; }
-
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: #999999;
-}
-.second-level-menu > li:hover { background: #CCCCCC; }
-
-.top-level-menu
-{
+/* Top-level menu styles */
+.top-level-menu {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.top-level-menu > li
-{
+.top-level-menu > li {
     position: relative;
     float: left;
     height: 30px;
     width: 150px;
     background: #999999;
 }
-.top-level-menu > li:hover { background: #CCCCCC; }
 
-.top-level-menu li:hover > ul
-{
-    /* On hover, display the next level's menu */
-    display: inline;
+.top-level-menu > li:hover {
+    background: #CCCCCC;
 }
 
-/* Menu Link Styles */
+/* Alleen voor het dropdownmenu van Drielagenmodel */
+.dropdown {
+    position: relative;
+}
 
-.top-level-menu a /* Apply to all links inside the multi-level menu */
-{
+/* Verberg het dropdown-menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    background-color: #999999;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Stijl voor de items in het dropdownmenu */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #999999;
+}
+
+.dropdown-content a:hover {
+    background-color: #CCCCCC;
+}
+
+/* Toon het dropdownmenu bij hover over Drielagenmodel */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Algemene linkstijl voor het menu */
+.top-level-menu a {
     font: bold 14px Arial, Helvetica, sans-serif;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 0 0 0 10px;
-
-    /* Make the link cover the entire list item-container */
+    padding-left: 10px;
     display: block;
     line-height: 30px;
 }
-.top-level-menu a:hover { color: #000000; }
+
+.top-level-menu a:hover {
+    color: #000000;
+}
