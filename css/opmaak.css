@@ -170,7 +170,7 @@ li a:hover:not(.active) {
   position: absolute;
   top: 0;
   right: -150px;
-  width: 150px;
+  width: 10000px;
   list-style: none;
   padding: 0;
   margin: 0;
