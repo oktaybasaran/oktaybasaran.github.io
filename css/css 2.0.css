@@ -17,17 +17,17 @@
     background: #CCCCCC;
 }
 
-/* Alleen voor het dropdownmenu van Drielagenmodel */
+/* Dropdown menu voor Drielagenmodel */
 .dropdown {
     position: relative;
 }
 
-/* Verberg het dropdown-menu */
+/* Verberg het dropdownmenu standaard */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 30px;
-    left: 0;
+    top: 0; /* Uitlijnen met het menu-item */
+    left: 150px; /* Zodat het dropdownmenu rechts van het menu-item komt te staan */
     width: 150px;
     background-color: #999999;
     list-style: none;
@@ -50,7 +50,7 @@
     background-color: #CCCCCC;
 }
 
-/* Toon het dropdownmenu bij hover over Drielagenmodel */
+/* Toon het dropdownmenu bij hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
