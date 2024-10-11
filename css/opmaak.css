@@ -90,8 +90,8 @@ li a:hover:not(.active) {
   background: #CCCCCC;
 }
 
-.top-level-menu li:hover > ul {
-  display: inline;
+.top-level-menu li:hover > .dropdown-content {
+  display: block; /* Wijziging om dropdown zichtbaar te maken bij hover */
 }
 
 /* Algemene linkstijl voor het menu */
@@ -117,15 +117,15 @@ li a:hover:not(.active) {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 30px;
+  top: 100%; /* Zorg dat het dropdown-menu onder het hoofdmenu-item staat */
   left: 0;
   width: 200px;
-  background-color: #999999;
+  background-color: #999999; /* Zichtbare achtergrondkleur */
   list-style: none;
   padding: 0;
   margin: 0;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 999; /* Zorg ervoor dat het dropdown-menu boven andere elementen staat */
 }
 
 .dropdown-content a {
@@ -133,7 +133,6 @@ li a:hover:not(.active) {
   padding: 10px;
   color: white;
   text-decoration: none;
-  background-color: #999999;
 }
 
 .dropdown-content a:hover {
@@ -141,19 +140,21 @@ li a:hover:not(.active) {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block; /* Dropdown zichtbaar bij hover */
 }
 
 /* Second and third-level dropdowns */
 .second-level-menu {
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 0; /* Pas de toppositie aan als nodig */
+  left: 100%; /* Positioneer het ten opzichte van het bovenliggende element */
   width: 200px;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: none;
+  display: none; /* Standaard verbergen */
+  background-color: #999999; /* Zorg voor een achtergrondkleur */
+  z-index: 999; /* Zorg ervoor dat het boven andere elementen staat */
 }
 
 .second-level-menu > li {
@@ -169,12 +170,14 @@ li a:hover:not(.active) {
 .third-level-menu {
   position: absolute;
   top: 0;
-  right: -150px;
+  right: -150px; /* Pas aan op basis van je layout */
   width: 200px;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: none;
+  display: none; /* Standaard verbergen */
+  background-color: #999999; /* Zorg voor een achtergrondkleur */
+  z-index: 999; /* Zorg ervoor dat het boven andere elementen staat */
 }
 
 .third-level-menu > li {
@@ -187,7 +190,7 @@ li a:hover:not(.active) {
 }
 
 /* Toon submenu's bij hover */
-.top-level-menu li:hover > ul.second-level-menu,
-.second-level-menu li:hover > ul.third-level-menu {
-  display: inline;
+.top-level-menu li:hover > .dropdown-content .second-level-menu,
+.second-level-menu li:hover > .third-level-menu {
+  display: block; /* Toon submenu's bij hover */
 }
