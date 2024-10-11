@@ -119,7 +119,7 @@ li a:hover:not(.active) {
   position: absolute;
   top: 30px;
   left: 0;
-  width: 150px;
+  width: 200px;
   background-color: #999999;
   list-style: none;
   padding: 0;
@@ -149,7 +149,7 @@ li a:hover:not(.active) {
   position: absolute;
   top: 30px;
   left: 0;
-  width: 150px;
+  width: 200px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -170,7 +170,7 @@ li a:hover:not(.active) {
   position: absolute;
   top: 0;
   right: -150px;
-  width: 10000px;
+  width: 200px;
   list-style: none;
   padding: 0;
   margin: 0;
