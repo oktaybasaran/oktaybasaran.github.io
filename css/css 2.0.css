@@ -27,7 +27,7 @@
     display: none;
     position: absolute;
     top: 0; /* Uitlijnen met het menu-item */
-    left: 150px; /* Zodat het dropdownmenu rechts van het menu-item komt te staan */
+    left: 150px; /* Zorg ervoor dat het submenu direct rechts naast "Drielagenmodel" komt */
     width: 150px;
     background-color: #999999;
     list-style: none;
