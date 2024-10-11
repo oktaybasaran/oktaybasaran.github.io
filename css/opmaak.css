@@ -7,16 +7,19 @@ ul {
   background-color: #609f9f;
 }
 
+
 /* Standaard opmaak voor lijstitems in het menu */
 li {
   float: left;
   border-right: 1px solid #bbb;
 }
 
+
 /* Geen border voor het laatste lijstitem */
 li:last-child {
   border-right: none;
 }
+
 
 /* Link opmaak binnen het menu */
 li a {
@@ -27,25 +30,30 @@ li a {
   text-decoration: none;
 }
 
+
 /* Hover-effect voor links, behalve het actieve item */
 li a:hover:not(.active) {
   background-color: #111;
 }
+
 
 /* Opmaak voor het actieve (geselecteerde) item */
 .active {
   background-color: #04AA6D;
 }
 
+
 /* Opmaak voor het hele document */
 body {
   background-color: #e0ebeb;
 }
 
+
 /* Kleuren voor kopteksten */
 h1 {
   color: #568f8f;
 }
+
 
 /* Opmaak voor paragrafen */
 p {
@@ -54,67 +62,83 @@ p {
   margin-bottom: 20px;
 }
 
+
 /* Standaard opmaak voor afbeeldingen en kopteksten */
 img {
   margin-top: 25px;
 }
+
 
 h1 {
   margin-top: 38px;
   margin-bottom: 25px;
 }
 
+
 /* Linkstijl voor verschillende statussen */
-a:link,
-a:visited {
+a:link, a:visited {
   text-decoration: none;
 }
 
-a:hover,
-a:active {
+
+a:hover, a:active {
   text-decoration: underline;
 }
+
 
 /* Vergrootte opmaak voor specifieke linkjes */
 .linkjes {
   font-size: 20px;
 }
 
-/* Dropdown-menu stijlen */
-.dropdown {
-  position: relative; /* Maak de dropdown absoluut ten opzichte van de ouder */
-}
 
-.dropdown-content {
-  display: none; /* Verberg de dropdown standaard */
+/* Verbeterde dropdownmenu voor Drielagenmodel */
+.third-level-menu {
   position: absolute;
-  left: 0; /* Zorg ervoor dat het dropdown-menu links uitlijnt */
-  top: 30px; /* Zorg ervoor dat het dropdown-menu onder de knop komt */
+  top: 0;
+  right: -150px;
   width: 150px;
-  background-color: #999999;
   list-style: none;
   padding: 0;
   margin: 0;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  display: none;
 }
 
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  background-color: #999999;
+
+.third-level-menu > li {
+  height: 30px;
+  background: #999999;
 }
 
-.dropdown-content a:hover {
-  background-color: #CCCCCC;
+
+.third-level-menu > li:hover {
+  background: #CCCCCC;
 }
 
-/* Zorg ervoor dat de dropdown zichtbaar wordt bij hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+
+.second-level-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
+
+
+.second-level-menu > li {
+  position: relative;
+  height: 30px;
+  background: #999999;
+}
+
+
+.second-level-menu > li:hover {
+  background: #CCCCCC;
+}
+
 
 /* Top-level menu structuur */
 .top-level-menu {
@@ -122,6 +146,7 @@ a:active {
   padding: 0;
   margin: 0;
 }
+
 
 /* Menu-item opmaak voor het bovenste niveau */
 .top-level-menu > li {
@@ -132,9 +157,17 @@ a:active {
   background: #999999;
 }
 
+
 .top-level-menu > li:hover {
   background: #CCCCCC;
 }
+
+
+/* Zorg ervoor dat de tweede en derde niveau menu's verschijnen bij hover */
+.top-level-menu li:hover > ul {
+  display: inline;
+}
+
 
 /* Menu link stijlen */
 .top-level-menu a {
@@ -146,6 +179,42 @@ a:active {
   line-height: 30px;
 }
 
+
 .top-level-menu a:hover {
   color: #000000;
+}
+
+
+/* Specifieke stijl voor de dropdown van Drielagenmodel */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  background-color: #999999;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #999999;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #CCCCCC;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
