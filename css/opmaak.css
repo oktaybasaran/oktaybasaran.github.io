@@ -3,7 +3,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: visible; /* Zorg ervoor dat de dropdown niet wordt afgesneden door de ul */
   background-color: #609f9f;
 }
 
@@ -11,7 +11,8 @@ ul {
 li {
   float: left;
   border-right: 1px solid #bbb;
-  position: relative; /* Toegevoegd voor dropdown positionering */
+  position: relative; /* Belangrijk voor dropdowns, zodat de absolute positie van het dropdown-menu werkt */
+  z-index: 10; /* Zorg ervoor dat de lijstitems bovenop de content staan */
 }
 
 /* Geen border voor het laatste lijstitem */
@@ -36,34 +37,6 @@ li a:hover:not(.active) {
 /* Opmaak voor het actieve (geselecteerde) item */
 .active {
   background-color: #04AA6D;
-}
-
-/* Dropdown-stijlen */
-.dropdown-content {
-  display: none; /* Verborgen standaard */
-  position: absolute; /* Absoluut gepositioneerd */
-  background-color: #f9f9f9; /* Achtergrondkleur voor dropdown */
-  min-width: 160px; /* Minimale breedte van de dropdown */
-  z-index: 1; /* Zorgt ervoor dat het dropdownmenu boven andere elementen ligt */
-}
-
-/* Dropdown links opmaak */
-.dropdown-content a {
-  color: black; /* Tekstkleur in de dropdown */
-  padding: 12px 16px; /* Opvulling voor de dropdown links */
-  text-decoration: none; /* Geen onderstreping */
-  display: block; /* Blok weergave */
-  text-align: left; /* Links uitlijnen */
-}
-
-/* Dropdown link hover-effect */
-.dropdown-content a:hover {
-  background-color: #ddd; /* Achtergrondkleur bij hover */
-}
-
-/* Toont de dropdown bij hover over het hoofdmenu item */
-.dropdown:hover .dropdown-content {
-  display: block; /* Laat het dropdownmenu zien */
 }
 
 /* Opmaak voor het hele document */
@@ -94,17 +67,56 @@ h1 {
 }
 
 /* Linkstijl voor verschillende statussen */
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   text-decoration: underline;
 }
 
 /* Vergrootte opmaak voor specifieke linkjes */
 .linkjes {
   font-size: 20px;
+}
+
+/* Dropdown-menu stijlen */
+.dropdown {
+  position: relative; /* Maak de dropdown absoluut ten opzichte van de ouder */
+  z-index: 20; /* Zorg ervoor dat de dropdown bovenop andere elementen komt */
+}
+
+.dropdown-content {
+  display: none; /* Verberg de dropdown standaard */
+  position: absolute;
+  left: 0; /* Zorg ervoor dat het dropdown-menu links uitlijnt */
+  top: 30px; /* Zorg ervoor dat het dropdown-menu onder de knop komt */
+  width: 150px;
+  background-color: #999999;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 30; /* Zorg ervoor dat de dropdown voor andere elementen staat */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #999999;
+}
+
+.dropdown-content a:hover {
+  background-color: #CCCCCC;
+}
+
+/* Zorg ervoor dat de dropdown zichtbaar wordt bij hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Top-level menu structuur */
@@ -139,4 +151,13 @@ a:hover, a:active {
 
 .top-level-menu a:hover {
   color: #000000;
+}
+
+/* Opmaak voor de footer */
+.footer {
+  margin-top: 40px; /* Verhoog deze waarde voor meer ruimte tussen de footer en de inhoud erboven */
+  padding: 20px; /* Voeg padding toe voor extra ruimte binnen de footer zelf */
+  background-color: #609f9f; /* Achtergrondkleur voor de footer */
+  color: white; /* Tekstkleur voor de footer */
+  text-align: center; /* Centreer de tekst in de footer */
 }
