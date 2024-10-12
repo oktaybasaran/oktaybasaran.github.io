@@ -5,15 +5,14 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #609f9f;
-  position: relative; /* Dit zorgt ervoor dat de dropdown-menu in context blijft met het ul element */
 }
 
 /* Standaard opmaak voor lijstitems in het menu */
 li {
   float: left;
   border-right: 1px solid #bbb;
-  position: relative; /* Zorg ervoor dat de dropdown binnen de li correct wordt gepositioneerd */
-  z-index: 1; /* Voorkom dat andere elementen over het lijstitem worden weergegeven */
+  position: relative;
+  z-index: 1; /* Zorg ervoor dat het lijstitem correct werkt met het dropdown-menu */
 }
 
 /* Geen border voor het laatste lijstitem */
@@ -85,8 +84,8 @@ a:active {
 
 /* Dropdown-menu stijlen */
 .dropdown {
-  position: relative; /* Maak de dropdown absoluut ten opzichte van de ouder */
-  z-index: 1000; /* Zorg ervoor dat de dropdown zichtbaar is boven andere elementen */
+  position: relative;
+  z-index: 1000; /* Plaats de dropdown voor andere elementen */
 }
 
 .dropdown-content {
@@ -100,7 +99,7 @@ a:active {
   padding: 0;
   margin: 0;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Zorg ervoor dat de dropdown voor andere elementen staat */
+  z-index: 9999; /* Zorg ervoor dat de dropdown zichtbaar is boven ALLE andere elementen */
 }
 
 .dropdown-content a {
