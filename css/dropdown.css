@@ -1,7 +1,7 @@
 /* Zorg ervoor dat de dropdown alleen zichtbaar wordt wanneer er overheen wordt gegaan */
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-block; /* Zorg ervoor dat het inline wordt weergegeven */
   }
   
   .dropdown-content {

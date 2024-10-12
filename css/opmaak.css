@@ -87,7 +87,7 @@ a:hover, a:active {
 
 /* Menu-item opmaak voor het bovenste niveau */
 .top-level-menu > li {
-  position: relative;
+  position: relative; /* Cruciaal voor dropdown */
   float: left;
   height: 30px;
   width: 150px;
@@ -95,7 +95,22 @@ a:hover, a:active {
 }
 
 .top-level-menu > li:hover {
-  background: #CCCCCC;
+  background: #CCCCCC; /* Achtergrondkleur bij hover */
+}
+
+/* Dropdown-item stijl */
+.dropdown-content {
+  display: none; /* Standaard verborgen */
+  position: absolute;
+  background-color: #609f9f; /* Consistente kleur met het menu */
+  min-width: 150px; /* Breedte van de dropdown */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Schaduw voor diepte */
+  z-index: 1; /* Zorg ervoor dat het dropdownmenu boven andere elementen staat */
+}
+
+/* Toon dropdown bij hover */
+.dropdown:hover .dropdown-content {
+  display: block; /* Maak het zichtbaar bij hover */
 }
 
 /* Menu link stijlen */
@@ -109,5 +124,5 @@ a:hover, a:active {
 }
 
 .top-level-menu a:hover {
-  color: #000000;
+  color: #000000; /* Verander kleur bij hover */
 }
