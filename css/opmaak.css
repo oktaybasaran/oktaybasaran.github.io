@@ -4,7 +4,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #609f9f; /* Achtergrondkleur van het menu */
+  background-color: #609f9f;
 }
 
 /* Standaard opmaak voor lijstitems in het menu */
@@ -39,7 +39,7 @@ li a:hover:not(.active) {
 
 /* Opmaak voor het hele document */
 body {
-  background-color: #e0ebeb; /* Achtergrondkleur voor het document */
+  background-color: #e0ebeb;
 }
 
 /* Kleuren voor kopteksten */
@@ -57,6 +57,11 @@ p {
 /* Standaard opmaak voor afbeeldingen en kopteksten */
 img {
   margin-top: 25px;
+}
+
+h1 {
+  margin-top: 38px;
+  margin-bottom: 25px;
 }
 
 /* Linkstijl voor verschillende statussen */
@@ -84,9 +89,9 @@ a:active {
   display: none; /* Verberg de dropdown standaard */
   position: absolute;
   left: 0; /* Zorg ervoor dat het dropdown-menu links uitlijnt */
-  top: 100%; /* Plaats het dropdown-menu direct onder het menu-item */
+  top: 30px; /* Zorg ervoor dat het dropdown-menu onder de knop komt */
   width: 150px;
-  background-color: #609f9f; /* Zelfde kleur als het menu */
+  background-color: #999999;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -99,11 +104,11 @@ a:active {
   padding: 10px;
   color: white;
   text-decoration: none;
-  background-color: #609f9f; /* Zelfde kleur als het menu */
+  background-color: #999999;
 }
 
 .dropdown-content a:hover {
-  background-color: #CCCCCC; /* Hoverkleur voor dropdown items */
+  background-color: #CCCCCC;
 }
 
 /* Zorg ervoor dat de dropdown zichtbaar wordt bij hover */
@@ -143,13 +148,4 @@ a:active {
 
 .top-level-menu a:hover {
   color: #000000;
-}
-
-/* Opmaak voor de footer */
-.footer {
-  margin-top: 40px; /* Verhoog deze waarde voor meer ruimte tussen de footer en de inhoud erboven */
-  padding: 20px; /* Voeg padding toe voor extra ruimte binnen de footer zelf */
-  background-color: #609f9f; /* Achtergrondkleur voor de footer */
-  color: white; /* Tekstkleur voor de footer */
-  text-align: center; /* Centreer de tekst in de footer */
 }
