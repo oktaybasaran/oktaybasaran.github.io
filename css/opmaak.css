@@ -11,6 +11,7 @@ ul {
 li {
   float: left;
   border-right: 1px solid #bbb;
+  position: relative; /* Toegevoegd voor dropdown positionering */
 }
 
 /* Geen border voor het laatste lijstitem */
@@ -35,6 +36,34 @@ li a:hover:not(.active) {
 /* Opmaak voor het actieve (geselecteerde) item */
 .active {
   background-color: #04AA6D;
+}
+
+/* Dropdown-stijlen */
+.dropdown-content {
+  display: none; /* Verborgen standaard */
+  position: absolute; /* Absoluut gepositioneerd */
+  background-color: #f9f9f9; /* Achtergrondkleur voor dropdown */
+  min-width: 160px; /* Minimale breedte van de dropdown */
+  z-index: 1; /* Zorgt ervoor dat het dropdownmenu boven andere elementen ligt */
+}
+
+/* Dropdown links opmaak */
+.dropdown-content a {
+  color: black; /* Tekstkleur in de dropdown */
+  padding: 12px 16px; /* Opvulling voor de dropdown links */
+  text-decoration: none; /* Geen onderstreping */
+  display: block; /* Blok weergave */
+  text-align: left; /* Links uitlijnen */
+}
+
+/* Dropdown link hover-effect */
+.dropdown-content a:hover {
+  background-color: #ddd; /* Achtergrondkleur bij hover */
+}
+
+/* Toont de dropdown bij hover over het hoofdmenu item */
+.dropdown:hover .dropdown-content {
+  display: block; /* Laat het dropdownmenu zien */
 }
 
 /* Opmaak voor het hele document */
