@@ -49,7 +49,9 @@ body {
   position: absolute; /* Absoluut ten opzichte van de ouder (li) */
   background-color: #609f9f; /* Zelfde achtergrondkleur */
   min-width: 160px; /* Minimale breedte van de dropdown */
-  z-index: 1; /* Zorg ervoor dat het boven andere elementen komt */
+  top: 100%; /* Plaats het dropdown-menu direct onder het menu-item */
+  left: 0; /* Zorg ervoor dat het menu precies onder het hoofdmenu verschijnt */
+  z-index: 1000; /* Zorg ervoor dat het dropdown-menu boven alle andere elementen staat */
 }
 
 /* Dropdown-item opmaak */
@@ -68,6 +70,11 @@ body {
 /* Toon de dropdown-content bij hover */
 li:hover .dropdown-content {
   display: block; /* Toon de dropdown bij hover */
+}
+
+/* Zorg ervoor dat het menu-item zichtbaar blijft tijdens hover */
+li:hover .dropbtn {
+  background-color: #111;
 }
 
 /* Kleuren voor kopteksten */
