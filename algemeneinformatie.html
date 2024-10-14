@@ -3,6 +3,7 @@
     <head> 
         <title>Algemene informatie</title> <!--De titel die wordt weergegeven in de browser-tab-->
         <link rel="stylesheet" type="text/css" href="css/opmaak.css"> <!--Koppeling naar CSS-->
+        <link rel="stylesheet" type="text/css" href="css/dropdown.css"> <!--Koppeling naar CSS-->
         <meta charset="utf-8"> <!--De karaktercodering van het document-->
     </head>
     <body>
@@ -15,17 +16,15 @@
             <li><a href="algemeneinformatie.html">Algemene info <img src="afbeeldingen/algemeneinformatiemenu.png" width="50" height="50"></a></li> 
             <li><a href="bestandformaten.html">Bestandformaten <img src="afbeeldingen/bestandformatenmenu.png" width="50" height="50"></a></li> 
             <li><a href="compressie.html">Compressie <img src="afbeeldingen/compressiemenu.png" width="50" height="50"></a></li>  
-              
-            <!-- Drielagenmodel met dropdownmenu -->
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Drielagenmodel <img src="afbeeldingen/computerarchitectuur.jpg" width="50" height="50"></a>
-                <div class="dropdown-content">
-                    <a href="drielagenmodel.html">Drielagenmodel</a>
-                    <a href="fysiekelaag.html">Fysieke laag</a>
-                    <a href="logischelaag.html">Logische laag</a>
-                    <a href="toepassingslaag.html">Toepassingslaag</a>
-                    <a href="specifiekeonderwerp.html">Specifieke onderwerp</a>
-                </div>
+            <li> <!-- Drielagenmodel met dropdownmenu -->
+                <a href="#">Drielagenmodel <img src="afbeeldingen/computerarchitectuur.jpg" width="50" height="50"></a>
+                <ul>
+                    <li><a href="drielagenmodel.html">Drielagenmodel</a></li>
+                    <li><a href="fysieke_laag.html">Fysieke laag</a></li>
+                    <li><a href="logische_laag.html">Logische laag</a></li>
+                    <li><a href="toepassingslaag.html">Toepassingslaag</a></li>
+                    <li><a href="specifiek_onderwerp.html">Specifiek onderwerp</a></li>
+                </ul>
             </li>
         </ul>
 
