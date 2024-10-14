@@ -113,7 +113,7 @@ a:active {
 
 /* Zorg ervoor dat de dropdown zichtbaar wordt bij hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block; /* Maak de dropdown zichtbaar bij hover */
 }
 
 /* Top-level menu structuur */
