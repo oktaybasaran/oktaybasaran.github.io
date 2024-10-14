@@ -1,0 +1,32 @@
+/* Opmaak voor het dropdownmenu */
+ul ul {
+    display: none; /* Verberg het dropdownmenu standaard */
+    position: absolute; /* Zorg ervoor dat het dropdownmenu op een absolute positie komt */
+    background-color: #609f9f; /* Achtergrondkleur van het dropdownmenu */
+    padding: 0; /* Geen padding voor het dropdownmenu */
+    margin: 0; /* Geen marge voor het dropdownmenu */
+    z-index: 1; /* Zorg ervoor dat het dropdownmenu boven andere elementen staat */
+}
+
+/* Toon het dropdownmenu bij hover over de bovenliggende li */
+li:hover > ul {
+    display: block; /* Toon het dropdownmenu bij hover */
+}
+
+/* Opmaak voor de items in het dropdownmenu */
+ul ul li {
+    float: none; /* Zorg ervoor dat de items onder elkaar staan */
+    border: none; /* Geen border voor dropdown items */
+}
+
+/* Link opmaak binnen het dropdownmenu */
+ul ul li a {
+    padding: 10px 15px; /* Padding voor links in het dropdownmenu */
+    color: white; /* Kleur voor links in het dropdownmenu */
+    text-align: left; /* Align links naar links in het dropdownmenu */
+}
+
+/* Hover-effect voor links in het dropdownmenu */
+ul ul li a:hover {
+    background-color: #111; /* Achtergrondkleur bij hover */
+}
