@@ -75,7 +75,7 @@ a:active {
   text-decoration: underline;
 }
 
-/* Vergrootte opmaak voor specifieke linkjes */
+/* Vergrootde opmaak voor specifieke linkjes */
 .linkjes {
   font-size: 20px;
 }
@@ -89,7 +89,7 @@ a:active {
   display: none; /* Verberg de dropdown standaard */
   position: absolute;
   left: 0; /* Zorg ervoor dat het dropdown-menu links uitlijnt */
-  top: 30px; /* Zorg ervoor dat het dropdown-menu onder de knop komt */
+  top: 100%; /* Zorg ervoor dat het dropdown-menu direct onder het item komt */
   width: 150px;
   background-color: #999999;
   list-style: none;
@@ -148,4 +148,9 @@ a:active {
 
 .top-level-menu a:hover {
   color: #000000;
+}
+
+/* Extra styling voor de dropdown bij top-level menu */
+.top-level-menu li.dropdown:hover .dropdown-content {
+  display: block; /* Zorg ervoor dat de dropdown zichtbaar wordt bij hover */
 }
