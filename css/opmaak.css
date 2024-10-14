@@ -38,18 +38,13 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
-/* Opmaak voor het hele document */
-body {
-  background-color: #e0ebeb;
-}
-
 /* Dropdown-menu opmaak */
 .dropdown-content {
   display: none; /* Verberg de dropdown standaard */
   position: absolute; /* Absoluut ten opzichte van de ouder (li) */
   background-color: #609f9f; /* Zelfde achtergrondkleur */
   min-width: 160px; /* Minimale breedte van de dropdown */
-  top: 100%; /* Plaats het dropdown-menu direct onder het menu-item */
+  top: 100%; /* Plaats de dropdown direct onder het menu-item */
   left: 0; /* Zorg ervoor dat het menu precies onder het hoofdmenu verschijnt */
   z-index: 1000; /* Zorg ervoor dat het dropdown-menu boven alle andere elementen staat */
 }
@@ -68,28 +63,30 @@ body {
 }
 
 /* Toon de dropdown-content bij hover */
-li:hover .dropdown-content {
-  display: block; /* Toon de dropdown bij hover */
+.dropdown:hover .dropdown-content {
+  display: block; /* Toon de dropdown als je over 'Drielagenmodel' heen gaat */
 }
 
 /* Zorg ervoor dat het menu-item zichtbaar blijft tijdens hover */
-li:hover .dropbtn {
+.dropdown:hover .dropbtn {
   background-color: #111;
 }
 
-/* Kleuren voor kopteksten */
+/* Opmaak voor de rest van de pagina */
+body {
+  background-color: #e0ebeb;
+}
+
 h1 {
   color: #568f8f;
 }
 
-/* Opmaak voor paragrafen */
 p {
   color: #568f8f;
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-/* Standaard opmaak voor afbeeldingen en kopteksten */
 img {
   margin-top: 25px;
 }
@@ -99,7 +96,6 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* Linkstijl voor verschillende statussen */
 a:link,
 a:visited {
   text-decoration: none;
@@ -110,7 +106,6 @@ a:active {
   text-decoration: underline;
 }
 
-/* Vergrootde opmaak voor specifieke linkjes */
 .linkjes {
   font-size: 20px;
 }
@@ -122,7 +117,6 @@ a:active {
   margin: 0;
 }
 
-/* Menu-item opmaak voor het bovenste niveau */
 .top-level-menu > li {
   float: left;
   height: 30px;
@@ -134,7 +128,6 @@ a:active {
   background: #CCCCCC;
 }
 
-/* Menu link stijlen */
 .top-level-menu a {
   font: bold 14px Arial, Helvetica, sans-serif;
   color: #FFFFFF;
