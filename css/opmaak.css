@@ -1,133 +1,69 @@
-/* Algemene menu-opmaak */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #609f9f;
-}
-
-/* Standaard opmaak voor lijstitems in het menu */
-li {
-  float: left;
-  border-right: 1px solid #bbb;
-  position: relative; /* Voor de dropdown */
-}
-
-/* Geen border voor het laatste lijstitem */
-li:last-child {
-  border-right: none;
-}
-
-/* Link opmaak binnen het menu */
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-}
-
-/* Hover-effect voor links, behalve het actieve item */
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-/* Opmaak voor het actieve (geselecteerde) item */
-.active {
-  background-color: #04AA6D;
-}
-
-/* Dropdown-menu opmaak */
-.dropdown-content {
-  display: none; /* Verberg de dropdown standaard */
-  position: absolute; /* Absoluut ten opzichte van de ouder (li) */
-  background-color: #609f9f; /* Zelfde achtergrondkleur */
-  min-width: 160px; /* Minimale breedte van de dropdown */
-  top: 100%; /* Plaats de dropdown direct onder het menu-item */
-  left: 0; /* Zorg ervoor dat het menu precies onder het hoofdmenu verschijnt */
-  z-index: 1000; /* Zorg ervoor dat het dropdown-menu boven alle andere elementen staat */
-}
-
-/* Dropdown-item opmaak */
-.dropdown-content a {
-  color: white; /* Witte tekst voor dropdown-items */
-  padding: 10px; /* Opvulling voor dropdown-items */
-  text-decoration: none; /* Geen onderstreping */
-  display: block; /* Maak ze blokken zodat ze de volledige breedte vullen */
-}
-
-/* Hover-effect voor dropdown-items */
-.dropdown-content a:hover {
-  background-color: #111; /* Donkere achtergrond op hover */
-}
-
-/* Toon de dropdown-content bij hover */
-.dropdown:hover .dropdown-content {
-  display: block; /* Toon de dropdown als je over 'Drielagenmodel' heen gaat */
-}
-
-/* Zorg ervoor dat het menu-item zichtbaar blijft tijdens hover */
-.dropdown:hover .dropbtn {
-  background-color: #111;
-}
-
-/* Opmaak voor de rest van de pagina */
-body {
-  background-color: #e0ebeb;
-}
-
-h1 {
-  color: #568f8f;
-}
-
-p {
-  color: #568f8f;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-img {
-  margin-top: 25px;
-}
-
-h1 {
-  margin-top: 38px;
-  margin-bottom: 25px;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover,
-a:active {
-  text-decoration: underline;
-}
-
-.linkjes {
-  font-size: 20px;
-}
-
-/* Top-level menu structuur */
+/* Top-level menu styles */
 .top-level-menu {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+
 .top-level-menu > li {
+  position: relative;
   float: left;
   height: 30px;
   width: 150px;
   background: #999999;
 }
 
+
 .top-level-menu > li:hover {
   background: #CCCCCC;
 }
 
+
+/* Dropdown menu voor Drielagenmodel */
+.dropdown {
+  position: relative;
+}
+
+
+/* Verberg het dropdownmenu standaard */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0; /* Uitlijnen met het menu-item */
+  left: 150px; /* Zorg ervoor dat het submenu direct rechts naast "Drielagenmodel" komt */
+  width: 150px;
+  background-color: #999999;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+/* Stijl voor de items in het dropdownmenu */
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #999999;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #CCCCCC;
+}
+
+
+/* Toon het dropdownmenu bij hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Algemene linkstijl voor het menu */
 .top-level-menu a {
   font: bold 14px Arial, Helvetica, sans-serif;
   color: #FFFFFF;
@@ -137,6 +73,77 @@ a:active {
   line-height: 30px;
 }
 
+
 .top-level-menu a:hover {
   color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Algemene opmaak voor het hele document */
+body {
+background-color: #e0ebeb;
+}
+
+
+/* Stijlen voor kopteksten en paragrafen */
+h1 {
+color: #568f8f;
+margin-top: 38px;
+margin-bottom: 25px;
+}
+
+
+p {
+color: #568f8f;
+font-size: 20px;
+margin-bottom: 20px;
+}
+
+
+/* Afbeeldingsopmaak */
+img {
+margin-top: 25px;
+}
+
+
+/* Algemene linkstijl voor verschillende statussen */
+a:link, a:visited {
+text-decoration: none;
+}
+
+
+a:hover, a:active {
+text-decoration: underline;
+}
+
+
+/* Vergrootte opmaak voor specifieke linkjes */
+.linkjes {
+font-size: 20px;
+}
+
+
+/* Algemene menu-opmaak */
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #609f9f;
 }
